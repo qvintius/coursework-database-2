@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ExtraFlightController">
+    <children>
+      <ComboBox fx:id="StatusBox" layoutX="500.0" layoutY="56.0" prefWidth="150.0" promptText="Статус" />
+        <TextField fx:id="NumberField" layoutX="26.0" layoutY="51.0" prefHeight="35.0" prefWidth="260.0" promptText="Номер рейса" />
+        <TextField fx:id="DateDepField" layoutX="26.0" layoutY="100.0" prefHeight="35.0" prefWidth="260.0" promptText="Дата отправления" />
+        <Button fx:id="OkButton" defaultButton="true" layoutX="180.0" layoutY="227.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="106.0" style="-fx-background-color: #f39c63;" text="Ок" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Button>
+        <Button fx:id="BackButton" cancelButton="true" layoutX="314.0" layoutY="227.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="106.0" style="-fx-background-color: #f39c63;" text="Отмена" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Button>
+        <Label fx:id="ErrorLabel" layoutX="14.0" layoutY="12.0" prefHeight="35.0" prefWidth="260.0" />
+        <TextField fx:id="DateDesField" layoutX="26.0" layoutY="151.0" prefHeight="35.0" prefWidth="260.0" promptText="Дата назначения" />
+        <Label fx:id="ErrorLabel" layoutX="210.0" layoutY="256.0">
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </Label>
+      <ComboBox fx:id="AdresDepBox" layoutX="314.0" layoutY="105.0" prefWidth="150.0" />
+      <Label fx:id="ErrorLabel" layoutX="71.0" layoutY="29.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="AdresDesBox" layoutX="314.0" layoutY="156.0" prefWidth="150.0" />
+      <ComboBox fx:id="BusBox" layoutX="314.0" layoutY="56.0" prefWidth="150.0" promptText="Тип автобуса" />
+    </children>
+</AnchorPane>

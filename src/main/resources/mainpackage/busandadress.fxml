@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.BusAndAdresController">
+    <children>
+        <AnchorPane layoutY="94.0" prefHeight="810.0" prefWidth="1600.0" style="-fx-background-color: white;">
+            <children>
+                <TableView fx:id="BusTable" layoutX="76.0" layoutY="102.0" prefHeight="517.0" prefWidth="629.0">
+                    <columns>
+                        <TableColumn fx:id="NumbCol" prefWidth="114.0" text="Номер автобуса" />
+                        <TableColumn fx:id="DateBeginCol" prefWidth="121.0" text="Дата начала" />
+                        <TableColumn fx:id="DateEndCol" prefWidth="128.0" text="Дата окончания" />
+                        <TableColumn fx:id="SeatsCol" prefWidth="93.0" text="Число мест" />
+                        <TableColumn fx:id="TypeCol" prefWidth="172.0" text="Тип автобуса" />
+                    </columns>
+                </TableView>
+                <Label fx:id="ErrorLabel" layoutX="748.0" layoutY="17.0" prefHeight="45.0" prefWidth="104.0">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font></Label>
+                <TableView fx:id="AdressTable" layoutX="1135.0" layoutY="95.0" prefHeight="635.0" prefWidth="150.0">
+                    <columns>
+                        <TableColumn fx:id="NameAdressCol" prefWidth="158.0" text="Город" />
+                    </columns>
+                </TableView>
+                <Button fx:id="AddAdressButton" layoutX="1312.0" layoutY="204.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="191.0" style="-fx-background-color: #F39C63;" text="Добавить город" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="ChangeAdressButton" layoutX="1312.0" layoutY="267.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="191.0" style="-fx-background-color: #F39C63;" text="Изменить город" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="DelAdressButton" layoutX="1312.0" layoutY="325.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="191.0" style="-fx-background-color: #F39C63;" text="Удалить город" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Button>
+                <Label fx:id="BusLabel" layoutX="76.0" layoutY="39.0" prefHeight="36.0" prefWidth="76.0" text="Автобусы">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="AdressLabel" layoutX="1135.0" layoutY="57.0" text="Города">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <Button fx:id="AddBusButton" layoutX="73.0" layoutY="687.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="158.0" style="-fx-background-color: #F39C63;" text="Добавить автобус" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="ChangeBusButton" layoutX="293.0" layoutY="687.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="158.0" style="-fx-background-color: #F39C63;" text="Изменить автобус" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="DeleteBusButton" layoutX="547.0" layoutY="687.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #F39C63;" text="Удалить автобус" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Button>
+            <TextField fx:id="NumbField" layoutX="78.0" layoutY="639.0" prefHeight="25.0" prefWidth="104.0" promptText="Номер автобуса" />
+            <TextField fx:id="DateBeginField" layoutX="198.0" layoutY="639.0" prefHeight="25.0" prefWidth="104.0" promptText="Дата начала исп." />
+            <TextField fx:id="DateEndField" layoutX="320.0" layoutY="639.0" prefHeight="25.0" prefWidth="104.0" promptText="Дата окончания" />
+            <TextField fx:id="SeatsField" layoutX="443.0" layoutY="639.0" prefHeight="25.0" prefWidth="104.0" promptText="Число мест" />
+            <ComboBox fx:id="TypeBox" layoutX="568.0" layoutY="639.0" prefHeight="25.0" prefWidth="137.0" promptText="Тип автобуса" />
+            <TextField fx:id="AdressField" layoutX="1312.0" layoutY="90.0" prefHeight="36.0" prefWidth="150.0" promptText="Название города" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
